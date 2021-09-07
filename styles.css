@@ -13,8 +13,6 @@ body, html {
 .bg-img{
 
  background-image: url('./landing.jpg');
-  filter: blur(4px);
-  -webkit-filter: blur(8px);
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
@@ -33,9 +31,12 @@ section{
 
 }
 nav{
+    width: max-content;
+    margin: 0 auto;
     font-weight: 600;
     font-size: 2rem;
     padding-top: 1rem;
+    text-align: center;
 }
 
 nav h2{
@@ -50,11 +51,11 @@ h1{
 p{
     padding-top: 1rem;
     font-size: 1.4rem;
-    width: 50%;
+    max-width: 500px;
     text-align: center;
     margin: 0 auto;
     line-height: 2rem;
-    color: #263238;
+    color: #000;
 }
 .cta{
     width: max-content;
@@ -92,8 +93,9 @@ footer span{
 }
 
 .main h2{
-    padding-top: 2rem;
-    font-weight: 500;
+    padding-top: 4rem;
+    font-weight: 600;
+    font-size: 2.5rem;
     text-align: center;
-    color: #263238;
+    color: #000;
 }
