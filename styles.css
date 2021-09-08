@@ -27,7 +27,7 @@ section{
     bottom: 0;
     right: 0;
     display: grid;
-    grid-template-rows: 31vh 32vh 31vh;
+    grid-template-rows: max-content 1fr max-content;
 
 }
 nav{
@@ -69,9 +69,11 @@ p{
 }
 
 .cta a{
-    border-radius: 100%;
+    background-color: #000;
+    padding: 15px;
+    border-radius: 3px;
     display: inline;
-    width: 50px;
+    width: 60px;
     margin-right: 2rem;
 }
 .cta a:last-child{
@@ -99,3 +101,42 @@ footer span{
     text-align: center;
     color: #000;
 }
+.main{
+    align-self: center;
+}
+
+@media only screen and (max-width: 450px) {
+    nav{
+        font-size: 1.5rem
+    }
+    nav >h2{
+        font-size: .9rem;
+    }
+    footer{
+        font-size: .8rem;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    nav{
+        font-size: 1.5rem
+    }
+    .main > h1{
+        font-size: 3rem;
+    }
+    .main>p{
+        font-size: 1rem;
+    }
+    .main>h2{
+        padding: 1rem;
+    }
+    .cta{
+        margin: 0 auto;
+    }
+    nav >h2{
+        font-size: .8rem;
+    }
+    footer{
+        font-size: .7rem;
+    }
+  }
